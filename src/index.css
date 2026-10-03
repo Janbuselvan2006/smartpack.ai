@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #16a34a;
+  --color-brand-dark: #15803d;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+@keyframes progress-fill {
+  from {
+    width: 8%;
+  }
+  to {
+    width: 92%;
+  }
+}
+
+.progress-bar {
+  animation: progress-fill 2.4s ease-in-out forwards;
+}
