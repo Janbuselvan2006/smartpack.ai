@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/smartpack.ai/',
+  base: process.env.GITHUB_ACTIONS ? '/smartpack.ai/' : '/',
 })
